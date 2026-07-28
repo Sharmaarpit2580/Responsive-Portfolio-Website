@@ -135,18 +135,22 @@
 <!--Contact Section-->
 <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
-    <form action="#">
-        <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" name="Email" placeholder="email address">
-        </div>
-        <div class="input-box">
-            <input type="number" placeholder="Phone Number">
-            <input type="text" placeholder="Email Subject">
-        </div>
-        <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn"> 
-        </form>
+    <form class="contact-card reveal" action="https://formsubmit.co/arpitsharma677689@gmail.com" method="POST" accept-charset="UTF-8">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="_replyto" type="email" placeholder="you@example.com" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me a little about your project" required></textarea>
+
+            <input type="hidden" name="_subject" value="New portfolio contact request" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="thanks.html" />
+
+            <button class="button primary" type="submit">Send message</button>
+          </form>
 </section>
 <!--Contact Section-->
 <footer class="footer">
